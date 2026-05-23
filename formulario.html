@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="css/styleFormulario.css">
+</head>
+<body>
+    <header><h1>Contato</h1></header>
+
+    <main>
+        <form action="obrigado.html" method="post" class="form-contato">
+            
+            <section>
+                <h2>Informações Pessoais</h2>
+                <p>Primeiro, preencha este formulário com suas informações pessoais.</p>
+
+                <div class="campo">
+                    <label for="Nome">Nome:</label>
+                    <input id="Nome" name="nome" type="text" required />
+                </div>
+    
+                <div class="campo">
+                    <label for="Genero">Gênero:</label>
+                    <select id="Genero" name="genero">
+                        <option value="Feminino">Feminino</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                </div>
+                
+                <div class="campo">
+                    <label for="Idade">Idade:</label>
+                    <select id="Idade" name="idade">
+                        <option value="+18">Maior de 18 (+18)</option>
+                        <option value="-18">Menor de 18 (-18)</option>
+                    </select>
+                </div>
+                
+                <div class="campo">
+                    <label for="Email">Email:</label>
+                    <input id="Email" name="email" type="email" required />
+                </div>
+            </section>
+
+            <section>
+                <h2>Seus Favoritos</h2>
+                <p>Agora me mostre o seu gosto para filmes.</p>
+
+                <div class="campo">
+                    <label for="filme-favorito">Filme Favorito:</label>
+                    <input id="filme-favorito" name="filmeFavorito" type="text" required />
+                </div>
+                
+                <div class="campo">
+                    <label for="genero-filme">Gênero de Filme Favorito:</label>
+                    <select id="genero-filme" name="generoFilme">
+                        <option value="Ação">Ação</option>
+                        <option value="Aventura">Aventura</option>
+                        <option value="Comédia">Comédia</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Terror">Terror</option>
+                        <option value="Ficção">Ficção Científica</option>
+                        <option value="Fantasia">Fantasia</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Suspense">Suspense</option>
+                        <option value="Documentário">Documentário</option>
+                        <option value="Animação">Animação</option>
+                        <option value="Faroeste">Faroeste</option>
+                        <option value="Musical">Musical</option>
+                    </select>
+                </div>
+            </section>
+
+            <div class="botoes-acao">
+                <button type="reset" class="btn-apagar">Apagar Tudo</button>
+                <button type="submit" class="btn-enviar">Enviar Respostas</button>
+            </div>
+            
+        </form>
+    </main>
+</body>
+</html>
